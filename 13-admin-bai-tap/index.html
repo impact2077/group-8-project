@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan Studio - thư viện bài tập của quản trị viên">
+  <title>Thư viện bài tập | FitPlan Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">FitPlan Studio</a>
+    <nav class="main-nav" aria-label="Menu quản trị viên">
+      <ul>
+        <li><a class="tab active" href="index.html" aria-current="page">Bài tập</a></li>
+        <li><a class="tab" href="#" data-soon>Người dùng</a></li>
+        <li><a class="tab" href="#" data-soon>Analytics</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <span>Admin · Quản trị viên</span>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Thư viện bài tập</h1>
+      <p>Dữ liệu bài tập gốc</p>
+    </section>
+
+
+    <section class="card-box" aria-label="Biểu mẫu bài tập">
+      <h2 id="formTitle">Thêm bài tập</h2>
+      <form id="itemForm" novalidate>
+        <div class="form-grid">
+        <div class="field">
+          <label for="f_name">Tên bài tập</label>
+          <input type="text" id="f_name" name="name">
+          <span class="error-text" id="err_name"></span>
+        </div>
+        <div class="field">
+          <label for="f_group">Nhóm cơ</label>
+          <input type="text" id="f_group" name="group">
+          <span class="error-text" id="err_group"></span>
+        </div>
+        <div class="field">
+          <label for="f_lvl">Mức độ</label>
+          <select id="f_lvl" name="lvl"><option value="Cơ bản">Cơ bản</option><option value="Nâng cao">Nâng cao</option></select>
+          <span class="error-text" id="err_lvl"></span>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Thêm</button>
+        <button type="button" class="btn btn-ghost" id="cancelBtn" hidden>Hủy</button>
+      </form>
+    </section>
+
+    <section id="itemList" aria-label="Danh sách bài tập"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer">
+    <p>FitPlan Studio — BTL-29 ·
+      <label class="fail-toggle"><input type="checkbox" id="failToggle"> Giả lập lỗi tải (xem trạng thái lỗi)</label>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
