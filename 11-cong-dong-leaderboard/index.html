@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan Studio - bảng xếp hạng cộng đồng">
+  <title>Leaderboard | FitPlan Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">FitPlan Studio</a>
+    <nav class="main-nav" aria-label="Menu điều phối cộng đồng">
+      <ul>
+        <li><a class="tab" href="#" data-soon>Challenge</a></li>
+        <li><a class="tab active" href="index.html" aria-current="page">Leaderboard</a></li>
+        <li><a class="tab" href="#" data-soon>Nội dung</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <span>Lan Điều Phối · Điều phối cộng đồng</span>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Bảng xếp hạng</h1>
+      <p>Theo dõi và điều chỉnh</p>
+    </section>
+
+    <section id="boardList" aria-label="Bảng xếp hạng"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer">
+    <p>FitPlan Studio — BTL-29 ·
+      <label class="fail-toggle"><input type="checkbox" id="failToggle"> Giả lập lỗi tải (xem trạng thái lỗi)</label>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

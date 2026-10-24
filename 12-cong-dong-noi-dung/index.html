@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan Studio - quản lý nội dung wellness">
+  <title>Nội dung wellness | FitPlan Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">FitPlan Studio</a>
+    <nav class="main-nav" aria-label="Menu điều phối cộng đồng">
+      <ul>
+        <li><a class="tab" href="#" data-soon>Challenge</a></li>
+        <li><a class="tab" href="#" data-soon>Leaderboard</a></li>
+        <li><a class="tab active" href="index.html" aria-current="page">Nội dung</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <span>Lan Điều Phối · Điều phối cộng đồng</span>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Nội dung wellness</h1>
+      <p>Bài viết sức khỏe</p>
+    </section>
+
+
+    <section class="card-box" aria-label="Biểu mẫu bài viết">
+      <h2 id="formTitle">Thêm bài viết</h2>
+      <form id="itemForm" novalidate>
+        <div class="form-grid">
+        <div class="field">
+          <label for="f_title">Tiêu đề</label>
+          <input type="text" id="f_title" name="title">
+          <span class="error-text" id="err_title"></span>
+        </div>
+        <div class="field">
+          <label for="f_body">Nội dung</label>
+          <textarea id="f_body" name="body" rows="3"></textarea>
+          <span class="error-text" id="err_body"></span>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Thêm</button>
+        <button type="button" class="btn btn-ghost" id="cancelBtn" hidden>Hủy</button>
+      </form>
+    </section>
+
+    <section id="itemList" aria-label="Danh sách bài viết"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer">
+    <p>FitPlan Studio — BTL-29 ·
+      <label class="fail-toggle"><input type="checkbox" id="failToggle"> Giả lập lỗi tải (xem trạng thái lỗi)</label>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
