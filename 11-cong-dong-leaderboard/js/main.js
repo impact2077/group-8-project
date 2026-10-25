@@ -34,7 +34,7 @@ function loadView(container, render) {
 }
 
 const logoutBtn = document.getElementById('logoutBtn');
-if (logoutBtn) logoutBtn.addEventListener('click', () => showToast('Đã đăng xuất (bản demo)'));
+if (logoutBtn) logoutBtn.addEventListener('click', () => { showToast('Đã đăng xuất (bản demo)'); setTimeout(() => { window.location.href = '../02-dang-nhap/index.html'; }, 700); });
 
 document.querySelectorAll('[data-soon]').forEach(link => {
   link.addEventListener('click', event => {
@@ -106,3 +106,12 @@ function onFailChange() {
 }
 
 loadView(boardList, drawBoard);
+
+const roleSwitch = document.getElementById('roleSwitch');
+if (roleSwitch) {
+  roleSwitch.addEventListener('change', () => {
+    const label = roleSwitch.options[roleSwitch.selectedIndex].text;
+    showToast('Chuyển sang vai trò ' + label);
+    setTimeout(() => { window.location.href = roleSwitch.value; }, 500);
+  });
+}
