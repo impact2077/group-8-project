@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan Studio - quản lý người dùng">
+  <title>Quản lý người dùng | FitPlan Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../01-trang-chu/index.html">FitPlan Studio</a>
+    <nav class="main-nav" aria-label="Menu quản trị viên">
+      <ul>
+        <li><a class="tab" href="../13-admin-bai-tap/index.html">Bài tập</a></li>
+        <li><a class="tab active" href="index.html" aria-current="page">Người dùng</a></li>
+        <li><a class="tab" href="../15-admin-analytics/index.html">Analytics</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <span>Admin · Quản trị viên</span>
+      <select class="role-switch" id="roleSwitch" aria-label="Chuyển vai trò nhanh" title="Chuyển vai trò nhanh"><option value="../04-nguoi-tap-dashboard/index.html">Người tập</option><option value="../07-coach-hoc-vien/index.html">Huấn luyện viên</option><option value="../10-cong-dong-challenge/index.html">Điều phối cộng đồng</option><option value="../13-admin-bai-tap/index.html" selected>Quản trị viên</option></select>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Quản lý người dùng</h1>
+      <p>Tài khoản và vai trò</p>
+    </section>
+
+
+    <section class="card-box" aria-label="Biểu mẫu người dùng">
+      <h2 id="formTitle">Thêm người dùng</h2>
+      <form id="itemForm" novalidate>
+        <div class="form-grid">
+        <div class="field">
+          <label for="f_name">Họ tên</label>
+          <input type="text" id="f_name" name="name">
+          <span class="error-text" id="err_name"></span>
+        </div>
+        <div class="field">
+          <label for="f_email">Email</label>
+          <input type="email" id="f_email" name="email">
+          <span class="error-text" id="err_email"></span>
+        </div>
+        <div class="field">
+          <label for="f_role">Vai trò</label>
+          <select id="f_role" name="role"><option value="Người tập">Người tập</option><option value="Huấn luyện viên">Huấn luyện viên</option><option value="Điều phối cộng đồng">Điều phối cộng đồng</option><option value="Quản trị viên">Quản trị viên</option></select>
+          <span class="error-text" id="err_role"></span>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Thêm</button>
+        <button type="button" class="btn btn-ghost" id="cancelBtn" hidden>Hủy</button>
+      </form>
+    </section>
+
+    <section id="itemList" aria-label="Danh sách người dùng"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer">
+    <p>FitPlan Studio — BTL-29 ·
+      <label class="fail-toggle"><input type="checkbox" id="failToggle"> Giả lập lỗi tải (xem trạng thái lỗi)</label>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
