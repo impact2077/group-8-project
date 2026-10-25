@@ -11,10 +11,10 @@ Tên tệp trong đề bài (cột "Tên đề bài") được ánh xạ sang th
 | 1 | Dùng chung | Trang chủ | `01-trang-chu` | `index.html` | Đọc | – | SV1 |
 | 2 | Dùng chung | Đăng nhập | `02-dang-nhap` | `login.html` | Kiểm tra form, đang đăng nhập | – | SV1 |
 | 3 | Dùng chung | Đăng ký | `03-dang-ky` | `register.html` | Kiểm tra form, thành công | – | SV1 |
-| 4 | Người tập | Dashboard | `04-nguoi-tap-dashboard` | `member-fitness-dashboard.html` | R | AI-2 | SV1 |
-| 5 | Người tập | Kế hoạch tập | `05-nguoi-tap-ke-hoach` | `member-workout-plan.html` | C/R/U, chờ duyệt | AI-1 | SV1 |
+| 4 | Người tập | Dashboard | `04-nguoi-tap-dashboard` | `member-fitness-dashboard.html` | R | - | SV1 |
+| 5 | Người tập | Kế hoạch tập | `05-nguoi-tap-ke-hoach` | `member-workout-plan.html` | C/R/U, chờ duyệt | - | SV1 |
 | 6 | Người tập | Nhật ký tập | `06-nguoi-tap-nhat-ky` | `member-workout-log.html` | C/R/U/D | – | SV1 |
-| 7 | Huấn luyện viên | Danh sách học viên | `07-coach-hoc-vien` | `coach-member-list.html` | R | AI-3 | SV2 |
+| 7 | Huấn luyện viên | Danh sách học viên | `07-coach-hoc-vien` | `coach-member-list.html` | R | - | SV2 |
 | 8 | Huấn luyện viên | Duyệt kế hoạch | `08-coach-duyet-ke-hoach` | `coach-plan-review.html` | R/U, duyệt / từ chối | – | SV2 |
 | 9 | Huấn luyện viên | Template bài tập | `09-coach-template` | `coach-workout-template-management.html` | C/R/U/D | – | SV2 |
 | 10 | Điều phối cộng đồng | Challenge | `10-cong-dong-challenge` | `community-challenge-management.html` | C/R/U, lưu trữ | – | SV3 |
