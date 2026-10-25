@@ -73,13 +73,7 @@ Chi tiết xem [screen-list.md](screen-list.md).
 
 ## 9. Tính năng AI
 
-| Mã | Tính năng | Trang |
-|---|---|---|
-| AI-1 | Workout Plan Generator | Người tập – Kế hoạch tập |
-| AI-2 | Consistency Insight | Người tập – Dashboard |
-| AI-3 | Coach Summary | Huấn luyện viên – Danh sách học viên |
-
-Cả ba đều mô phỏng bằng luật trong JavaScript, không gọi API thật. Chi tiết xem [roles-and-features.md](roles-and-features.md) và [ai-usage-report.md](ai-usage-report.md).
+Chưa có API thật.
 
 ## 10. Kết quả mong đợi
 
