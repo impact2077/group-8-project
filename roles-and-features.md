@@ -53,24 +53,7 @@
 
 ## 3. Tính năng AI
 
-Mỗi tính năng AI đi theo luồng: nhập → kiểm tra hợp lệ → đang xử lý → kết quả → giải thích → người dùng quyết định.
-
-| Mã | Tên | Vị trí | Đầu vào | Kết quả | Thao tác người dùng |
-|---|---|---|---|---|---|
-| AI-1 | Workout Plan Generator | Người tập – Kế hoạch tập | Mục tiêu, số buổi/tuần | Danh sách bài tập lọc từ bài mẫu theo nhóm cơ phù hợp mục tiêu | Chấp nhận, Chỉnh sửa, Thử lại |
-| AI-2 | Consistency Insight | Người tập – Dashboard | Log tập, tỉ lệ hoàn thành | Nhận xét theo tỉ lệ hoàn thành | Bỏ qua, Thử lại |
-| AI-3 | Coach Summary | Huấn luyện viên – Danh sách học viên | Lịch sử log của học viên | Tóm tắt mức độ hoàn thành | Thử lại |
-
-**Trạng thái thất bại hoặc không chắc chắn:**
-
-| Mã | Tình huống | Thông báo / thao tác |
-|---|---|---|
-| AI-1 | Không đủ dữ liệu | Thử lại hoặc dùng thủ công |
-| AI-2 | Chưa đủ log | Hiển thị thông báo, cho bỏ qua hoặc thử lại |
-| AI-3 | Dưới 3 buổi tập | "Không đủ dữ liệu để tóm tắt (cần ít nhất 3 buổi)." kèm Thử lại |
-| AI-3 | Kết quả không chắc chắn | "AI chưa chắc chắn về tóm tắt này." kèm Thử lại |
-
-Cả ba chỉ mô phỏng theo luật, không gọi API thật.
+Chưa có API thật.
 
 ## 4. Thực thể dữ liệu
 
