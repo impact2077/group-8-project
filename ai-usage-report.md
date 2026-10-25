@@ -4,8 +4,7 @@
 
 | Công cụ | Mục đích |
 |---|---|
-| Claude | Hỗ trợ tách mã thành từng trang (HTML, CSS, JavaScript), viết README và tài liệu trong `docs/` |
-| (điền thêm nếu nhóm dùng công cụ khác) | |
+| Claude | Hỗ trợ tách mã thành từng trang (HTML, CSS, JavaScript), viết README và tài liệu trong `docs/`, tạo khung cơ bản cho web và 1 số tính năng|
 
 ## 2. Prompt chính
 
@@ -15,8 +14,6 @@
 | 2 | HTML trước | Viết HTML semantic cho từng màn hình, chưa có CSS hoặc JavaScript, có sẵn id và class để gắn sau. |
 | 3 | Tách trang | Tách thành từng thư mục gồm `index.html`, `css/style.css`, `js/main.js`, `assets/`, `README.md`. |
 | 4 | Tài liệu | Viết 5 file trong `docs/` từ đề BTL-29 và mã nguồn của 15 trang. |
-
-(Nhóm bổ sung prompt thực tế đã dùng cho từng trang nếu có.)
 
 ## 3. Phần AI sinh ra
 
@@ -30,17 +27,13 @@
 
 ## 4. Phần sinh viên chỉnh sửa
 
-Phần này do nhóm tự điền theo thực tế. Gợi ý các mục cần ghi:
-
 | Thành viên | Trang | Chỉnh sửa |
 |---|---|---|
-| SV1 | (điền) | (điền) |
-| SV2 | (điền) | (điền) |
-| SV3 | (điền) | (điền) |
+| SV1 | 6 | Thêm tính năng kiểm tra ngày có tồn tại không (ví dụ như ngày 30/2 ko tồn tại) |
+| SV2 | 2,3,4,8,9,14 | Tối ưu lại giao diện |
+| SV3 | 13,14,15 | Sửa lại responsive bị tràn màn hình |
 
 ## 5. Lỗi AI gặp phải
-
-Nhóm điền các lỗi thực tế đã gặp khi chạy thử. Một số loại lỗi thường gặp cần kiểm tra:
 
 | Loại lỗi | Cách phát hiện |
 |---|---|
@@ -59,19 +52,11 @@ Nhóm điền các lỗi thực tế đã gặp khi chạy thử. Một số lo�
 
 ## 7. Điều sinh viên học được
 
-Nhóm tự điền theo trải nghiệm thực tế. Gợi ý: cách dùng DOM và sự kiện, cách kiểm tra form, tách dữ liệu khỏi giao diện, cách dùng Git theo nhánh và pull request.
+Cách dùng DOM và sự kiện, cách kiểm tra form, tách dữ liệu khỏi giao diện, cách dùng Git theo nhánh và pull request.
 
 ## 8. Mock và API thật
 
-| Tính năng | Loại |
-|---|---|
-| AI-1 Workout Plan Generator | Mock, theo luật trong JavaScript |
-| AI-2 Consistency Insight | Mock, theo luật trong JavaScript |
-| AI-3 Coach Summary | Mock, theo luật trong JavaScript |
-| Đăng nhập, đăng ký | Mock, không có máy chủ |
-| Toàn bộ dữ liệu | Mảng JavaScript, mất khi tải lại trang |
-
-Không có tính năng nào gọi API thật.
+Chưa có API thật.
 
 ## 9. Cam kết
 
