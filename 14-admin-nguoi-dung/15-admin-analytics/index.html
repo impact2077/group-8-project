@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan Studio - thống kê toàn hệ thống">
+  <title>Analytics | FitPlan Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../01-trang-chu/index.html">FitPlan Studio</a>
+    <nav class="main-nav" aria-label="Menu quản trị viên">
+      <ul>
+        <li><a class="tab" href="../13-admin-bai-tap/index.html">Bài tập</a></li>
+        <li><a class="tab" href="../14-admin-nguoi-dung/index.html">Người dùng</a></li>
+        <li><a class="tab active" href="index.html" aria-current="page">Analytics</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <span>Admin · Quản trị viên</span>
+      <select class="role-switch" id="roleSwitch" aria-label="Chuyển vai trò nhanh" title="Chuyển vai trò nhanh"><option value="../04-nguoi-tap-dashboard/index.html">Người tập</option><option value="../07-coach-hoc-vien/index.html">Huấn luyện viên</option><option value="../10-cong-dong-challenge/index.html">Điều phối cộng đồng</option><option value="../13-admin-bai-tap/index.html" selected>Quản trị viên</option></select>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Fitness Analytics</h1>
+      <p>Tổng quan và báo cáo toàn hệ thống</p>
+    </section>
+
+    <section class="filter-bar filter-bar-single" aria-label="Khoảng thời gian">
+      <div class="field">
+        <label for="rangeSelect">Khoảng thời gian</label>
+        <select id="rangeSelect">
+          <option value="all">Tất cả</option>
+          <option value="7">7 ngày gần nhất</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="statsView" aria-label="Thống kê hệ thống"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer">
+    <p>FitPlan Studio — BTL-29 ·
+      <label class="fail-toggle"><input type="checkbox" id="failToggle"> Giả lập lỗi tải (xem trạng thái lỗi)</label>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
