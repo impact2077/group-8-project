@@ -4,8 +4,8 @@
 
 | Ký hiệu | Họ tên | MSSV |
 |---|---|---|
-| SV1 | Vũ Năng Kỳ | 2551060644 |
-| SV2 | Trần Minh Hải | 2551060610 |
+| SV1 | Trần Minh Hải | 2551060610 |
+| SV2 | Vũ Năng Kỳ | 2551060644 |
 | SV3 | Trần Việt Dũng | 2551060606 |
 
 ## 2. Phân công chính
@@ -23,7 +23,7 @@ Mỗi thành viên tự làm đủ HTML, CSS, JavaScript, Git và video OBS cho 
 | Thành viên | Trách nhiệm | Nội dung |
 |---|---|---|
 | SV1 | Responsive, tích hợp và kiểm tra giao diện | Kiểm tra desktop, tablet, mobile cho toàn bộ trang; đồng phụ trách trang dùng chung. |
-| SV2 | JavaScript, dữ liệu và tương tác AI | Mô-đun dùng chung (hiển thị trạng thái, thông báo, dữ liệu mẫu); ba luồng AI-1, AI-2, AI-3; đánh giá PR của SV1 và SV3. |
+| SV2 | JavaScript, dữ liệu và tương tác AI | Mô-đun dùng chung (hiển thị trạng thái, thông báo, dữ liệu mẫu); đánh giá PR của SV1 và SV3. |
 | SV3 | Điều hướng, hệ thống thiết kế, phát hành | Thanh điều hướng và bố cục thống nhất; kiểm tra tính nhất quán giữa các vai trò; gộp `dev` vào `main`. |
 
 ## 4. Lát cắt dọc của từng thành viên
@@ -32,8 +32,8 @@ Mỗi thành viên hoàn thành ít nhất một luồng: Figma → HTML → CSS
 
 | Thành viên | Luồng chính |
 |---|---|
-| SV1 | Dashboard và Kế hoạch tập (AI-1, AI-2) |
-| SV2 | Danh sách học viên (AI-3) |
+| SV1 | Dashboard và Kế hoạch tập |
+| SV2 | Danh sách học viên |
 | SV3 | Challenge và Quản lý người dùng |
 
 ## 5. Quy trình Git
@@ -60,18 +60,16 @@ Quy ước commit: `feat:`, `fix:`, `style:`, `refactor:`, `docs:`. Không dùng
 
 Cột: Tồn đọng → Cần làm → Đang làm → Chờ duyệt → Hoàn thành.
 
-Mỗi task ghi: mã công việc, màn hình, người thực hiện, hạn, nhánh, link PR/commit, link video OBS.
-
 | Mã | Công việc |
 |---|---|
-| TASK-01 | Khung dây và mockup màn hình |
-| TASK-02 | HTML semantic |
-| TASK-03 | CSS responsive |
-| TASK-04 | JavaScript tìm kiếm, lọc, biểu mẫu |
-| TASK-05 | Dữ liệu giả lập |
-| TASK-06 | Trải nghiệm AI |
-| TASK-07 | Kiểm thử trình duyệt và mobile |
-| TASK-08 | Video OBS, commit, README |
+| TASK-01 -> TASK-03 | Quay video obs |
+| TASK-04 | Responsive cho mobile |
+| TASK-05 | Làm figma |
+| TASK-06 | Hoàn thành readme |
+| TASK-07 -> TASK-09 | Làm html+css+js cho vai trò được giao |
+| TASK-10 | Làm html cho giao diện chung |
+| TASK-11 | Làm CSS cho giao diện chung |
+| TASK-12 | Làm JS cho giao diện chung |
 
 ## 7. Lịch làm việc
 
