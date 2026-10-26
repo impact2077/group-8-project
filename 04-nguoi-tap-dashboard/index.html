@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan Studio - tổng quan tập luyện của người tập">
+  <title>Dashboard người tập | FitPlan Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../01-trang-chu/index.html">FitPlan Studio</a>
+    <nav class="main-nav" aria-label="Menu người tập">
+      <ul>
+        <li><a class="tab active" href="index.html" aria-current="page">Dashboard</a></li>
+        <li><a class="tab" href="../05-nguoi-tap-ke-hoach/index.html">Kế hoạch</a></li>
+        <li><a class="tab" href="../06-nguoi-tap-nhat-ky/index.html">Nhật ký</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <span>Nguyễn Văn An · Người tập</span>
+      <select class="role-switch" id="roleSwitch" aria-label="Chuyển vai trò nhanh" title="Chuyển vai trò nhanh"><option value="../04-nguoi-tap-dashboard/index.html" selected>Người tập</option><option value="../07-coach-hoc-vien/index.html">Huấn luyện viên</option><option value="../10-cong-dong-challenge/index.html">Điều phối cộng đồng</option><option value="../13-admin-bai-tap/index.html">Quản trị viên</option></select>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Fitness Dashboard</h1>
+      <p>Tổng quan hôm nay</p>
+    </section>
+
+    <section id="dashboardView" aria-label="Tổng quan tập luyện"></section>
+  </main>
+
+  <div class="overlay" id="onboarding" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="onbTitle">
+      <h2 id="onbTitle">Thiết lập mục tiêu</h2>
+      <p class="muted">Cho chúng tôi biết để gợi ý kế hoạch phù hợp.</p>
+      <form id="onbForm" novalidate>
+        <div class="field">
+          <label for="goal">Mục tiêu</label>
+          <select id="goal" name="goal">
+            <option value="">— Chọn —</option>
+            <option value="Giảm cân">Giảm cân</option>
+            <option value="Tăng cơ">Tăng cơ</option>
+            <option value="Duy trì">Duy trì</option>
+          </select>
+          <span class="error-text" id="err_goal"></span>
+        </div>
+        <div class="field">
+          <label for="sessions">Số buổi/tuần</label>
+          <input type="number" id="sessions" name="sessions" min="1">
+          <span class="error-text" id="err_sessions"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Bắt đầu</button>
+        <button type="button" class="btn btn-ghost" id="laterBtn">Để sau</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer">
+    <p>FitPlan Studio — BTL-29 ·
+      <label class="fail-toggle"><input type="checkbox" id="failToggle"> Giả lập lỗi tải (xem trạng thái lỗi)</label>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
