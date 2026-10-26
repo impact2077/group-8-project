@@ -39,4 +39,5 @@ FitPlan Studio là giao diện mẫu cho một nền tảng lập kế hoạch t
 - CSS3: Flexbox, Grid và Media Queries
 - JavaScript thuần: thao tác DOM và xử lý sự kiện
 - JavaScript thuần: thao tác DOM và xử lý sự kiện
+
 link figma: https://www.figma.com/design/HeCymv5xs6QMeUSsBWLHk0/Untitled?node-id=0-1&t=clBn2w0PGP7DlGU7-1
