@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FitPlan Studio - huấn luyện viên duyệt kế hoạch tập">
+  <title>Duyệt kế hoạch | FitPlan Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../01-trang-chu/index.html">FitPlan Studio</a>
+    <nav class="main-nav" aria-label="Menu huấn luyện viên">
+      <ul>
+        <li><a class="tab" href="../07-coach-hoc-vien/index.html">Học viên</a></li>
+        <li><a class="tab active" href="index.html" aria-current="page">Duyệt kế hoạch</a></li>
+        <li><a class="tab" href="../09-coach-template/index.html">Template</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <span>Coach Hùng · Huấn luyện viên</span>
+      <button type="button" class="btn btn-ghost" id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Duyệt kế hoạch tập</h1>
+      <p>Phản hồi kế hoạch do học viên gửi</p>
+    </section>
+
+    <section class="filter-bar filter-bar-single" aria-label="Lọc kế hoạch">
+      <div class="field">
+        <label for="statusSelect">Trạng thái</label>
+        <select id="statusSelect">
+          <option value="">Tất cả</option>
+          <option value="pending">Đang chờ</option>
+          <option value="rejected">Bị từ chối</option>
+          <option value="completed">Hoàn thành</option>
+          <option value="archived">Đã hủy</option>
+        </select>
+      </div>
+    </section>
+
+    <p class="result-count" id="resultCount" aria-live="polite"></p>
+    <section class="card-grid" id="planList" aria-label="Danh sách kế hoạch"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer">
+    <p>FitPlan Studio — BTL-29 ·
+      <label class="fail-toggle"><input type="checkbox" id="failToggle"> Giả lập lỗi tải (xem trạng thái lỗi)</label>
+    </p>
+  </footer>
+
+  <script src="../shared/store.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
